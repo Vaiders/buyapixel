@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(80, 10px);
+            grid-gap: 1px;
+        }
+
+        .square {
+            width: 10px;
+            height: 10px;
+            background-color: gray;
+            transition: background-color 0.3s;
+        }
+
+        @media (max-width: 768px) {
+            .square {
+                width: 3px;
+                height: 3px;
+            }
+            .grid {
+            display: grid;
+            grid-template-columns: repeat(80, 3px);
+            grid-gap: 1px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="grid" id="grid">
+    </div>
+
+    <script>
+        alertShown = false;
+
+        function checkForGreySquares() {
+            const squares = document.querySelectorAll('.grid .square'); // Select squares within the grid
+    const greySquares = Array.from(squares).filter(square => {
+        const computedStyle = getComputedStyle(square);
+        return computedStyle.backgroundColor === 'rgb(128, 128, 128)';
+    });
+
+    console.log(`Number of gray squares: ${greySquares.length}`);
+
+    if (greySquares.length === 0 && !alertShown) {
+        alert('Congratulations! You have nothing better to do with your life! Here is a discounted stripe link: https://buy.stripe.com/6oEeYa8Zvdqd5gs5kn');
+        alertShown = true;
+    }
+}
+
+
+        function changeColor(element) {
+    const randomColor = getRandomColor();
+    element.style.backgroundColor = randomColor;
+
+    checkForGreySquares();
+}
+
+function getRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    const grid = document.getElementById("grid");
+
+    for (let i = 0; i < 6400; i++) {
+        const square = document.createElement("div");
+        square.className = "square";
+        square.addEventListener("mouseover", function () {
+            changeColor(this);
+        });
+        square.addEventListener("touchstart", function () {
+            changeColor(this);
+        });
+        grid.appendChild(square);
+    }
+});
+    </script>
+</body>
+</html>
