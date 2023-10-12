@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(8, 100px); /* Adjust the number of columns as needed */
+            grid-gap: 5px; /* Adjust the gap between squares as needed */
+        }
+
+        .square {
+            width: 100px;
+            height: 100px;
+            background-color: gray;
+            transition: background-color 0.3s;
+            border: 1px solid white;
+        }
+
+        .square:hover {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+        <div class="square" onmouseover="changeColor(this)" ontouchstart="changeColor(this)"></div>
+    </div>
+
+    <script>
+        function changeColor(element) {
+            const randomColor = getRandomColor();
+            element.style.backgroundColor = randomColor;
+        }
+
+        function getRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+    </script>
+</body>
+</html>
